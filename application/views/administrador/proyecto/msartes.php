@@ -1,0 +1,2 @@
+<label class="control-label text-bold">S.&nbsp;Artes:</label>
+<input name="s_artes" type="number" class="form-control" id="s_artes" value="<?php if(count($get_sub)>0){ echo $get_sub[0]['tipo_subtipo_arte']; }else{ echo ""; }  ?>" maxlength="3" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" placeholder="Artes" readonly>

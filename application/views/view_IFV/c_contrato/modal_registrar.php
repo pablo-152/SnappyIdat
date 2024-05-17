@@ -1,0 +1,667 @@
+<form id="formulario_insert" method="POST" enctype="multipart/form-data" class="formulario">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h5 class="modal-title"><b>Contrato (Nuevo)</b></h5>
+    </div>
+
+    <div class="modal-body" style="max-height:520px; overflow:auto;"> 
+        <div class="col-md-12 row">
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Tipo:</label> 
+            </div>
+            <div class="form-group col-md-4">
+                <select class="form-control" id="tipo_i" name="tipo_i" onchange="Tipo_Contrato_I();">
+                    <option value="0">Seleccione</option> 
+                    <?php foreach($list_tipo as $list){ ?>
+                        <option value="<?php echo $list['id_tipo']."-".$list['alumno']."-".$list['fecha_envio']; ?>"><?php echo $list['nom_tipo']; ?></option> 
+                    <?php } ?>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Ref:</label> 
+            </div>
+            <div class="form-group col-md-4">
+                <input type="text" class="form-control" id="referencia_i" name="referencia_i" maxlength="5" placeholder="Ref">
+            </div>
+        </div>
+
+        <div class="col-md-12 row">
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Mes/Año:</label>
+            </div>
+            <div class="form-group col-md-4">
+                <select class="form-control" id="mes_anio_i" name="mes_anio_i">
+                    <option value="0">Seleccione</option>
+                    <?php foreach($list_anio as $list){ 
+                        foreach($list_mes as $mes){ ?>
+                            <option value="<?php echo $mes['cod_mes']."/".$list['nom_anio']; ?>">
+                                <?php echo substr($mes['nom_mes'],0,3)."/".substr($list['nom_anio'],-2); ?>
+                            </option>
+                        <?php } ?>
+                    <?php } ?>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2 mostrar_i">
+                <label class="control-label text-bold">Fec. Envío:</label>
+            </div>
+            <div class="form-group col-md-4 mostrar_i">
+                <input type="date" class="form-control" id="fecha_envio_i" name="fecha_envio_i">
+            </div>
+        </div>
+
+        <div class="col-md-12 row">
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Descripción:</label>
+            </div>
+            <div class="form-group col-md-10">
+                <input type="text" class="form-control" id="descripcion_i" name="descripcion_i" placeholder="Descripción">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Asunto:</label>
+            </div>
+            <div class="form-group col-md-10">
+                <input type="text" class="form-control" id="asunto_i" name="asunto_i" placeholder="Asunto">
+            </div>
+        </div>
+
+        <div class="col-md-12 row">
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Enviar a:</label>
+            </div>
+            <div class="form-group col-md-4">
+                <select class="form-control" id="enviar_i" name="enviar_i" onchange="Tipo_Contrato_I();">
+                    <option value="1">Alumno</option> 
+                    <option value="2" selected>Filtro</option> 
+                </select>
+            </div>
+        </div>
+
+        <div id="div_alumno_i" class="col-md-12 row"> 
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Alumno:</label>
+            </div>
+            <div id="select_alumno_i" class="form-group col-md-10">
+                <select class="form-control" id="alumnos_i" name="alumnos_i">
+                </select> 
+            </div>
+        </div>   
+
+        <div id="div_filtro_i" class="col-md-12 row"> 
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Grupo:</label>
+            </div>
+            <div id="select_grupo_i" class="form-group col-md-4">
+                <select class="form-control" id="id_grupo_i" name="id_grupo_i">
+                    <option value="0">Todos</option>
+                </select> 
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Especialidad:</label>
+            </div>
+            <div id="select_especialidad_i" class="form-group col-md-4">
+                <select class="form-control" id="id_especialidad_i" name="id_especialidad_i">
+                    <option value="0">Todos</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Turno:</label>
+            </div>
+            <div id="select_turno_i" class="form-group col-md-4">
+                <select class="form-control" id="id_turno_i" name="id_turno_i">
+                    <option value="0">Todos</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Módulo:</label>
+            </div>
+            <div id="select_modulo_i" class="form-group col-md-4">
+                <select class="form-control" id="id_modulo_i" name="id_modulo_i">
+                    <option value="0">Todos</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Sección:</label>
+            </div>
+            <div id="select_seccion_i" class="form-group col-md-4">
+                <select class="form-control" id="id_seccion_i" name="id_seccion_i">
+                    <option value="0">Todos</option>
+                </select>
+            </div>
+        </div>   
+
+        <div class="col-md-12 row">
+            <div class="form-group col-md-12">
+                <label class="control-label text-bold">Texto Correo:</label>
+                <textarea class="form-control" id="texto_correo_i" name="texto_correo_i" placeholder="Texto Correo" rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-12 row">
+            <div class="form-group col-md-12">
+                <input type="checkbox" id="sms_i" name="sms_i" value="1" onclick="Habilitar_Sms_I();">
+                <label class="control-label text-bold">SMS</label>
+                <textarea class="form-control mostrar_sms_i" id="texto_sms_i" name="texto_sms_i" placeholder="SMS" rows="2" maxlength="160"></textarea>
+            </div>
+        </div>
+
+        <div class="col-md-12 row">
+            <div class="form-group col-md-2">
+                <label class="control-label text-bold">Documento:</label>
+                <input type="file" id="documento_i" name="documento_i" onchange="validarExt_I();">
+            </div>
+        </div>  	           	                	        
+    </div> 
+    
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="Insert_C_Contrato()"> 
+            <i class="glyphicon glyphicon-ok-sign"></i> Guardar
+        </button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">
+            <i class="glyphicon glyphicon-remove-sign"></i> Cancelar
+        </button>
+    </div>
+</form>
+
+<script>
+    $(document).ready(function() {
+        $('.mostrar_i').hide();
+        $('#div_alumno_i').hide();
+        $('.mostrar_sms_i').hide();
+    });
+
+    function Tipo_Contrato_I(){
+        $(document)
+        .ajaxStart(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        })
+        .ajaxStop(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                timeout: 100,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+
+        var enviar = $('#enviar_i').val();
+
+        if(enviar==1){
+            var url="<?php echo site_url(); ?>AppIFV/Traer_Alumno_Contrato_I"; 
+            var tipo = $('#tipo_i').val().split('-');
+
+            $.ajax({
+                type:"POST",
+                url:url,
+                data:{'alumno':tipo[1]},
+                success:function (data) { 
+                    $('#div_alumno_i').show();
+                    $('#select_alumno_i').html(data);
+                    $('#div_filtro_i').hide();
+                    $('#select_grupo_i').html('<select class="form-control" id="id_grupo_i" name="id_grupo_i"><option value="0">Todos</option></select>');
+                    $('#select_especialidad_i').html('<select class="form-control" id="id_especialidad_i" name="id_especialidad_i"><option value="0">Todos</option></select>');
+                    $('#select_turno_i').html('<select class="form-control" id="id_turno_i" name="id_turno_i"><option value="0">Todos</option></select>');
+                    $('#select_modulo_i').html('<select class="form-control" id="id_modulo_i" name="id_modulo_i"><option value="0">Todos</option></select>');
+                    $('#select_seccion_i').html('<select class="form-control" id="id_seccion_i" name="id_seccion_i"><option value="0">Todos</option></select>');
+                }
+            });
+        }else{
+            var url="<?php echo site_url(); ?>AppIFV/Traer_Grupo_Contrato_I"; 
+            var tipo = $('#tipo_i').val().split('-');
+
+            $.ajax({
+                type:"POST",
+                url:url,
+                data:{'alumno':tipo[1]},
+                success:function (data) {
+                    $('#div_filtro_i').show();
+                    $('#select_grupo_i').html(data);
+                    $('#select_especialidad_i').html('<select class="form-control" id="id_especialidad_i" name="id_especialidad_i"><option value="0">Todos</option></select>');
+                    $('#select_turno_i').html('<select class="form-control" id="id_turno_i" name="id_turno_i"><option value="0">Todos</option></select>');
+                    $('#select_modulo_i').html('<select class="form-control" id="id_modulo_i" name="id_modulo_i"><option value="0">Todos</option></select>');
+                    $('#select_seccion_i').html('<select class="form-control" id="id_seccion_i" name="id_seccion_i"><option value="0">Todos</option></select>');
+                    $('#div_alumno_i').hide();
+                    $('#select_alumno_i').html('<select class="form-control" id="alumnos_i" name="alumnos_i"></select>');
+                }
+            });
+        }
+
+        if(tipo[2]==1){
+            $('.mostrar_i').show();
+        }else{
+            $('.mostrar_i').hide(); 
+            $('#fecha_envio_i').val('');
+        }
+    }
+
+    function Traer_Especialidad_Contrato_I(){ 
+        $(document)
+        .ajaxStart(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        })
+        .ajaxStop(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                timeout: 100,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+
+        var url="<?php echo site_url(); ?>AppIFV/Traer_Especialidad_Contrato_I"; 
+        var id_grupo = $('#id_grupo_i').val();
+        var tipo = $('#tipo_i').val().split('-');
+
+        $.ajax({
+            type:"POST",
+            url:url,
+            data:{'id_grupo':id_grupo,'alumno':tipo[1]},
+            success:function (data) {
+                $('#select_especialidad_i').html(data);
+                $('#select_turno_i').html('<select class="form-control" id="id_turno_i" name="id_turno_i"><option value="0">Todos</option></select>');
+                $('#select_modulo_i').html('<select class="form-control" id="id_modulo_i" name="id_modulo_i"><option value="0">Todos</option></select>');
+                $('#select_seccion_i').html('<select class="form-control" id="id_seccion_i" name="id_seccion_i"><option value="0">Todos</option></select>');
+            }
+        });
+    }
+
+    function Traer_Turno_Contrato_I(){
+        $(document)
+        .ajaxStart(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        })
+        .ajaxStop(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                timeout: 100,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+
+        var url="<?php echo site_url(); ?>AppIFV/Traer_Turno_Contrato_I";
+        var id_grupo = $('#id_grupo_i').val();
+        var id_especialidad = $('#id_especialidad_i').val();
+        var tipo = $('#tipo_i').val().split('-');
+
+        $.ajax({
+            type:"POST",
+            url:url,
+            data:{'id_grupo':id_grupo,'id_especialidad':id_especialidad,'alumno':tipo[1]},
+            success:function (data) {
+                $('#select_turno_i').html(data);
+                $('#select_modulo_i').html('<select class="form-control" id="id_modulo_i" name="id_modulo_i"><option value="0">Todos</option></select>');
+                $('#select_seccion_i').html('<select class="form-control" id="id_seccion_i" name="id_seccion_i"><option value="0">Todos</option></select>');
+            }
+        });
+    }
+
+    function Traer_Modulo_Contrato_I(){
+        $(document)
+        .ajaxStart(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        })
+        .ajaxStop(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                timeout: 100,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+
+        var url="<?php echo site_url(); ?>AppIFV/Traer_Modulo_Contrato_I";
+        var id_grupo = $('#id_grupo_i').val();
+        var id_especialidad = $('#id_especialidad_i').val();
+        var id_turno = $('#id_turno_i').val();
+        var tipo = $('#tipo_i').val().split('-');
+
+        $.ajax({
+            type:"POST",
+            url:url,
+            data:{'id_grupo':id_grupo,'id_especialidad':id_especialidad,'id_turno':id_turno,'alumno':tipo[1]},
+            success:function (data) {
+                $('#select_modulo_i').html(data);
+                $('#select_seccion_i').html('<select class="form-control" id="id_seccion_i" name="id_seccion_i"><option value="0">Todos</option></select>');
+            }
+        });
+    }
+
+    function Traer_Seccion_Contrato_I(){
+        $(document)
+        .ajaxStart(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        })
+        .ajaxStop(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                timeout: 100,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+
+        var url="<?php echo site_url(); ?>AppIFV/Traer_Seccion_Contrato_I";
+        var id_grupo = $('#id_grupo_i').val();
+        var id_especialidad = $('#id_especialidad_i').val();
+        var id_turno = $('#id_turno_i').val();
+        var id_modulo = $('#id_modulo_i').val();
+        var tipo = $('#tipo_i').val().split('-');
+
+        $.ajax({
+            type:"POST",
+            url:url,
+            data:{'id_grupo':id_grupo,'id_especialidad':id_especialidad,'id_turno':id_turno,'id_modulo':id_modulo,'alumno':tipo[1]},
+            success:function (data) {
+                $('#select_seccion_i').html(data);
+            }
+        });
+    }
+
+    function Habilitar_Sms_I(){
+        if($('#sms_i').is(':checked')) {
+            $('.mostrar_sms_i').show();
+        }else{
+            $('.mostrar_sms_i').hide();
+            $('#texto_sms_i').val('');
+        }
+    }
+
+    function validarExt_I(){
+        var archivoInput = document.getElementById('documento_i'); 
+        var archivoRuta = archivoInput.value; 
+        var extPermitidas = /(.pdf)$/i;
+        if(!extPermitidas.exec(archivoRuta)){
+            Swal({
+                title: 'Registro Denegado',
+                text: "Asegurese de ingresar documento con extensión .pdf.",
+                type: 'error',
+                showCancelButton: false,
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'OK',
+            });
+            archivoInput.value = '';
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    function Insert_C_Contrato(){
+        $(document)
+        .ajaxStart(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        })
+        .ajaxStop(function () {
+            $.blockUI({
+                message: '<svg> ... </svg>',
+                fadeIn: 800,
+                timeout: 100,
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    zIndex: 1200,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    zIndex: 1201,
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        });
+
+        var dataString = new FormData(document.getElementById('formulario_insert'));
+        var url="<?php echo site_url(); ?>AppIFV/Insert_C_Contrato";
+
+        if (Valida_Insert_C_Contrato()) {
+            $.ajax({
+                url: url,
+                data:dataString,
+                type:"POST",
+                processData: false,
+                contentType: false,
+                success:function (data) {
+                    Lista_C_Contrato();
+                    $("#acceso_modal .close").click()
+                }
+            });
+        }
+    }
+
+    function Valida_Insert_C_Contrato() {
+        var tipo = $('#tipo_i').val().split('-');
+
+        if($('#tipo_i').val().trim() === '0') {
+            Swal(
+                'Ups!',
+                'Debe seleccionar Tipo.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        if($('#referencia_i').val().trim() === '') { 
+            Swal(
+                'Ups!',
+                'Debe ingresar Ref.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        if($('#mes_anio_i').val().trim() === '0') {
+            Swal(
+                'Ups!',
+                'Debe seleccionar Mes/Año.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        if(tipo[2]==1){
+            if($('#fecha_envio_i').val().trim() === '') {
+                Swal(
+                    'Ups!',
+                    'Debe ingresar Fecha Envío.',
+                    'warning'
+                ).then(function() { });
+                return false;
+            }
+        }
+        if($('#descripcion_i').val().trim() === '') {
+            Swal(
+                'Ups!',
+                'Debe ingresar Descripción.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        if($('#asunto_i').val().trim() === '') {
+            Swal(
+                'Ups!',
+                'Debe ingresar Asunto.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        if($('#texto_correo_i').val().trim() === '') {
+            Swal(
+                'Ups!',
+                'Debe ingresar Texto Correo.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        if($('#documento_i').val().trim() === '') {
+            Swal(
+                'Ups!',
+                'Debe seleccionar Documento.',
+                'warning'
+            ).then(function() { });
+            return false;
+        }
+        return true;
+    }
+</script>

@@ -1,0 +1,99 @@
+/*table tr {
+    background-color: #eee;
+}
+
+table tr:nth-child(2) {
+    background-color: #eee;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+*/
+/*table thead tr th{
+    font-weight: bold;
+    font-size: 12px;
+}*/
+table thead{
+    background-color:#e5e5e5;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+table thead tr th{
+    font-weight: bold;
+}
+
+table tbody tr td{
+    font-size: 16px;
+}
+
+label{
+    font-weight: bold;
+}
+
+#contadornulosst {
+    background: red;
+    cursor: pointer;
+    margin: 0px 0px 0px 90px;    
+}
+
+#contadorreno {
+    background: #0070c0;
+    cursor: pointer;
+    margin: 0px 0px 0px 46px;
+    padding: 0px 4px 0px 4px !important;
+}
+
+#contadorcadu {
+    background: red;
+    cursor: pointer;
+    margin: 0px 0px 0px 4px;
+    padding: 0px 4px 0px 4px !important;
+}
+
+
+/*table tr th{
+    font-weight: bold;
+}*/
+
+   
+   .table-hover tbody tr:hover{
+    background-color:#cacaca;
+   }
+      div.dataTables_wrapper  div.dataTables_filter {
+        width: 100%;
+        float: left !important;
+        text-align: left;
+      }
+
+      thead input {
+        width: 100%;
+      }
+
+      #mydatatable tfoot {
+		display: table-header-group !important;
+	}
+
+    td, th {
+      padding: 1px;
+      padding-top: 5px;
+      padding-right: 5px;
+      padding-bottom: 1px;
+      padding-left: 6px;
+      line-height: 1;
+      vertical-align: top;
+  }
+
+  
+
+     /* div label.texto {
+        width: 214px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }*/

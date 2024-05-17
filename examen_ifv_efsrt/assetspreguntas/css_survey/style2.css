@@ -1,0 +1,54 @@
+
+
+.letraspequeñas{
+    font-size: 15px;
+}
+
+
+
+
+img.pequeña{
+    width: 30%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+
+
+
+.btn-blue {
+    margin-top: 40px;
+    background-color: #dd8a0d;
+    color: #fff;
+    width: 48%;
+}
+
+.btn-blue:hover {
+    background-color: #e7a414cf;
+}
+
+.btn-secondary {
+    margin-top: 40px;
+    width: 28%
+}
+
+.fa-long-arrow-right {
+    float: right;
+    margin-top: 4px
+}
+
+.fa-long-arrow-left {
+    float: left;
+    margin-top: 4px
+}
+
+
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}

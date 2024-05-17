@@ -1,0 +1,178 @@
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: white;
+}
+@media only screen 
+and (device-width : 414px) 
+and (device-height : 896px) 
+and (-webkit-device-pixel-ratio : 2)
+and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        height: 745px;
+    }
+}
+@media only screen 
+and (device-width : 411px) 
+and (device-height : 823px) 
+and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+        height: 745px;
+    }
+}
+
+
+
+@media only screen 
+and (device-width : 375px) 
+and (device-height : 812px) 
+and (-webkit-device-pixel-ratio : 3) and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: 691px;
+    }
+}
+@media only screen 
+and (device-width : 360px) 
+and (device-height : 740px) 
+and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: 620px;
+    }
+}
+
+@media only screen 
+and (device-width : 320px) 
+and (device-height : 568px) 
+and (-webkit-device-pixel-ratio : 3) and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: 677px;
+    }
+    .hijo1 {
+        width: 200px;
+        padding: 12px 0px 0px 10px;
+    }
+    .grado {
+        font-size: 28px;
+        margin-bottom: 0px;
+        height: 42px;
+        font-family: 'Gotham-Bold';
+    }
+    .devicer {
+        width: 190px;
+        display: block;
+        height: 1px;
+        background-color: #ffffff;
+        /* margin: 1px auto 0; */
+    }
+    .unidad {
+        font-size: 20px;
+        margin-bottom: 0px;
+        font-family: 'Gotham-Book';
+    }
+}
+@media only screen and (min-device-width: 320px) and (device-height : 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation:portrait)
+{
+    .img-fluid {
+        max-width: 100%;
+        height: 677px;
+    }
+    .hijo1 {
+        width: 200px;
+        padding: 12px 0px 0px 10px;
+    }
+    .grado {
+        font-size: 28px;
+        margin-bottom: 0px;
+        height: 42px;
+        font-family: 'Gotham-Bold';
+    }
+    .devicer {
+        width: 190px;
+        display: block;
+        height: 1px;
+        background-color: #ffffff;
+        /* margin: 1px auto 0; */
+    }
+    .unidad {
+        font-size: 20px;
+        margin-bottom: 0px;
+        font-family: 'Gotham-Book';
+    }
+}
+@media only screen 
+and (device-width : 280px) 
+and (device-height : 653px) 
+and (-webkit-device-pixel-ratio : 3) and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: 535px;
+    }
+    .img-fluid-boton{
+        width: 250px;
+        height: auto;
+    }
+    .hijo1 {
+        width: 170px;
+        padding: 12px 0px 0px 10px;
+    }
+    .grado {
+        font-size: 23px;
+        margin-bottom: 0px;
+        height: 39px;
+    }
+    .devicer {
+        width: 155px;
+        display: block;
+        height: 1px;
+        background-color: #ffffff;
+        /* margin: 1px auto 0; */
+    }
+    .unidad {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .imaaa {
+        width: 100%;
+        padding: 10px 0px 0px 0px;
+    }
+    .nom_curso {
+        font-size: 14px;
+        text-shadow: 0px 0px #131313;
+        margin-bottom: 0px;
+        font-family: 'Gotham-Book';
+    }
+}
+@media only screen and (max-width: 767.98px){
+    .noti-dropdown{
+    display: none;
+    }
+    .has-arrow {
+    display: none;
+    }
+}
+
+
+@media only screen 
+and (width : 320px) 
+and (height : 568px) 
+and (orientation : portrait)  { 
+    .img-fluid {
+        max-width: 100%;
+        height: 535px;
+    }
+
+    .img-fluid-boton{
+        width: 292px;
+        height: auto;
+    }
+}

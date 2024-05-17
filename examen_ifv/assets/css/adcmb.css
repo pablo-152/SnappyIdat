@@ -1,0 +1,582 @@
+/*fondos de letra*/
+@font-face {
+	font-family: Gotham-Bold;
+	src: url('../fonts/Gotham-Bold.otf'); 
+  }
+@font-face {
+	font-family: Gotham-Light;
+	src: url('../fonts/Gotham-Light.otf'); 
+  }
+@font-face {
+	font-family: Gotham-Book;
+	src: url('../fonts/Gotham-Book.otf'); 
+  }
+@font-face {
+	font-family: GothamCond-Bold;
+	src: url('../fonts/GothamCond-Bold.otf'); 
+  }
+/*fondos*/
+
+.modal-container{ 
+	opacity: 0;
+	visibility: hidden;
+	position:fixed;
+	z-index:1000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.modal {
+    width: 345px;
+    height: 451px;
+    background: #9f9b9b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    /* overflow: hidden; */
+    border-radius: 50px;
+    padding: 10px;
+}
+.close {
+    position: absolute;
+    top: -15px;
+    right: -17px;
+    display: inline;
+    width: 51px;
+    height: 45px;
+    background: url(../img2/imagenes/x.png);
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.close:hover {
+	background: url(../img2/imagenes/x_yellow.png);
+	position: absolute;
+    top: -15px;
+    right: -17px;
+    display: inline;
+    width: 51px;
+    height: 45px;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.modal-close{
+	transform: translateY(-200%);
+}
+.modal .cuerpo .ups > img {
+    height: 100%;
+}
+.modal .cuerpo {
+    background-color: #afafaf;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+    /* line-height: 75px; */
+    font-size: 30px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+.modal .cuerpo .ups {
+    order: 1;
+    background-color: #afafaf;
+    width: 100%;
+    height: 23%;
+    border-radius: 24px;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+    /* line-height: 75px; */
+    /* border: 2px solid black; */
+	padding: 10px;
+	padding: 0px 10px 0px 10px;
+}
+.modal .cuerpo .linea1 {
+    order: 2;
+	background-color: #afafaf;
+	color: white;
+    width: 100%;
+    height:7%;
+    border-radius: 24px;
+    align-items: flex-start;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.modal .cuerpo .linea1 label {
+	font-size: 25px;
+	font-family: Gotham-Bold;
+}
+.modal .cuerpo .linea2 {
+    order: 3;
+    background-color: #afafaf;
+    color: white;
+    width: 100%;
+    height: 8%;
+    border-radius: 24px;
+	align-items: flex-start;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.modal .cuerpo .linea2 label {
+	font-size: 25px;
+	font-family: Gotham-Bold;
+}
+.modal .cuerpo .linea3 {
+    order: 4;
+    background-color: #afafaf;
+    color: white;
+    width: 100%;
+    display: flex;
+    height: 15%;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.modal .cuerpo .linea3 label {
+	font-size: 20px;
+	font-family: Gotham-Light ;
+}
+.modal .cuerpo .linea4 {
+    order: 5;
+    background-color: #afafaf;
+    color: white;
+	width: 100%;
+	display: flex;
+    height: 12%;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+}
+.modal .cuerpo .linea4 a.instruc_pago {
+    width: 100%;
+    height: 100%;
+    background: url(../img2/imagenes/instruc_pago.png) no-repeat;
+    background-size: 250px 44px;
+    /* background-size: cover; */
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+}
+.modal .cuerpo .linea4 a.instruc_pago:hover {
+	width: 100%;
+    height: 100%;
+    background: url(../img2/imagenes/instruc_pagobc.png) no-repeat;
+    background-size: 250px 55px;
+    /* background-size: cover; */
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+}
+.modal .cuerpo .linea5 {
+    order: 6;
+    background-color: #afafaf;
+    color: white;
+    width: 100%;
+	height: 12%;
+	display: flex;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+	text-align: center;
+    margin-bottom: 12px;
+    padding: 0px 10px 0px 10px;
+}
+.modal .cuerpo .linea5  a.ingresa_tu {
+	width: 100%;
+    height: 100%;
+	background: url(../img2/imagenes/ingresa_tu.png) no-repeat;
+	background-size: 250px 44px;
+    /* background-size: cover; */
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+}
+.modal .cuerpo .linea5  a.ingresa_tu:hover {
+	width: 100%;
+    height: 100%;
+    background: url(../img2/imagenes/ingresa_tubc.png) no-repeat;
+    background-size: 250px 55px;
+    /* background-size: cover; */
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+}
+.modal .cuerpo .linea6 {
+    order: 7;
+    background-color: #e5e5e5;
+    color: black;
+    width: 324px;
+    display: flex;
+    height: 15%;
+    /* border-radius: 24px; */
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* margin: 0px; */
+    margin-left: -10px;
+    padding: 0px 10px 0px 10px;
+}
+.hyphenation {
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+   -ms-hyphens: auto;
+	   hyphens: auto;
+}
+.modal .cuerpo .linea6 label {
+	font-size: 15px;
+	text-align: left;
+	font-family: Gotham-Light ;
+}
+.modal .cuerpo .linea6 .fb {
+	height: 5%;
+	width: 5%;
+}
+.modal .cuerpo .linea6 .ws {
+	height: 5%;
+	width: 5%;;
+}
+.modal .cuerpo .linea6 a.facebook{
+	text-decoration: none;
+	color:black !important;
+   }
+.modal .cuerpo .linea6 a.whatsapp{
+	text-decoration: none;
+	color: black !important;
+   }
+@media screen and (max-width:1000px){
+	section{
+		flex-direction: column-reverse;
+		/*align-content: center;*/
+	}
+	section > img{
+		height: 40%;
+	}
+}
+/* iphone 6+ 7+ 8+ */
+@media only screen 
+and (min-device-width : 401px) 
+and (max-device-width : 700px) 
+and (orientation : portrait) { 
+	/* STYLES GO HERE */
+	.modal {
+        width: 270px;
+        height: 450px;
+	}
+	.modal .cuerpo .linea6 {
+		width: 250px;
+	}
+	.modal .cuerpo .linea6 label {
+		font-size: 11.5px;
+	}
+	.modal .cuerpo .linea1 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea2 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea4 {
+		height: 11%;
+	}
+	.modal .cuerpo .linea4 a.instruc_pago {
+		background-size: 210px 40px;
+	}
+	.modal .cuerpo .linea5 {
+		margin-bottom: 19px;
+		height: 11%;
+	}
+	.modal .cuerpo .linea5 a.ingresa_tu {
+		background-size: 210px 40px;
+    }
+    .modal .cuerpo .linea4 a.instruc_pago:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/instruc_pagobc.png) no-repeat;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-size: auto;
+        background-size: 220px 55px;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+    .modal .cuerpo .linea5 a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/ingresa_tubc.png) no-repeat;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-size: auto;
+        background-size: 215px 55px;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* iphone 6 7 8 */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 400px) 
+and (orientation : portrait) {
+	 /* STYLES GO HERE */ 
+	.modal {
+		width: 300px;
+		height: 450px;
+	}
+	.modal .cuerpo .linea6 {
+		width: 280px;
+	}
+	.modal .cuerpo .linea6 label {
+		font-size: 13px;
+	}
+	.modal .cuerpo .linea1 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea2 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea4 {
+		height: 11%;
+	}
+	.modal .cuerpo .linea4 a.instruc_pago {
+		background-size: 210px 40px;
+	}
+	.modal .cuerpo .linea5 {
+		margin-bottom: 19px;
+		height: 11%;
+	}
+	.modal .cuerpo .linea5 a.ingresa_tu {
+		background-size: 210px 40px;
+	}
+}
+
+@media only screen 
+and (max-width : 374px) and (orientation : portrait) {
+    	/* STYLES GO HERE */
+	.modal {
+		width: 300px;
+		height: 450px;
+	}
+	.modal .cuerpo .linea6 {
+		width: 280px;
+	}
+	.modal .cuerpo .linea6 label {
+		font-size: 13px;
+	}
+	.modal .cuerpo .linea1 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea2 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea4 {
+		height: 11%;
+	}
+	.modal .cuerpo .linea4 a.instruc_pago {
+		background-size: 210px 40px;
+	}
+	.modal .cuerpo .linea5 {
+		margin-bottom: 19px;
+		height: 11%;
+	}
+	.modal .cuerpo .linea5 a.ingresa_tu {
+		background-size: 210px 40px;
+	}
+}
+
+@media only screen 
+and (max-width : 330px) and (orientation : portrait) {
+    	/* STYLES GO HERE */
+	.modal {
+        width: 260px;
+		height: 450px;
+	}
+	.modal .cuerpo .linea6 {
+        width: 240px;
+	}
+	.modal .cuerpo .linea6 label {
+        font-size: 11.5px;
+	}
+	.modal .cuerpo .linea1 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea2 label {
+		font-size: 20px;
+	}
+	.modal .cuerpo .linea4 {
+		height: 11%;
+	}
+	.modal .cuerpo .linea4 a.instruc_pago {
+		background-size: 210px 40px;
+	}
+	.modal .cuerpo .linea5 {
+		margin-bottom: 19px;
+		height: 11%;
+	}
+	.modal .cuerpo .linea5 a.ingresa_tu {
+		background-size: 210px 40px;
+    }
+    .modal .cuerpo .linea5  a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/ingresa_tu.png) no-repeat;
+        background-size: 200px 44px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+    .modal .cuerpo .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/ingresa_tubc.png) no-repeat;
+        background-size: 200px 50px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+    .modal .cuerpo .linea4 a.instruc_pago {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/instruc_pago.png) no-repeat;
+        background-size: 200px 44px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+    .modal .cuerpo .linea4 a.instruc_pago:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/instruc_pagobc.png) no-repeat;
+        background-size: 200px 50px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen 
+and (max-width : 290px) and (orientation : portrait) {
+    	/* STYLES GO HERE */
+	.modal {
+        width: 235px;
+        height: 450px;
+	}
+	.modal .cuerpo .linea6 {
+        width: 215px;
+	}
+	.modal .cuerpo .linea6 label {
+        font-size: 10.5px;
+	}
+	.modal .cuerpo .linea1 label {
+		font-size: 17px;
+	}
+	.modal .cuerpo .linea2 label {
+		font-size: 17px;
+    }
+    .modal .cuerpo .linea3 label {
+        font-size: 16px;
+        font-family: Gotham-Light;
+    }
+	.modal .cuerpo .linea4 {
+		height: 11%;
+	}
+	.modal .cuerpo .linea4 a.instruc_pago {
+		background-size: 210px 40px;
+	}
+	.modal .cuerpo .linea5 {
+		margin-bottom: 19px;
+		height: 11%;
+	}
+	.modal .cuerpo .linea5 a.ingresa_tu {
+		background-size: 210px 40px;
+    }
+    .modal .cuerpo .linea5 a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/ingresa_tu.png) no-repeat;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-size: auto;
+        background-size: 176px 40px;
+
+    }
+    .modal .cuerpo .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/ingresa_tubc.png) no-repeat;
+        background-size: 176px  50px;
+    }
+    .modal .cuerpo .linea4 a.instruc_pago {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/instruc_pago.png) no-repeat;
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-size: auto;
+        background-size: 176px 40px;
+
+    }
+    .modal .cuerpo .linea4 a.instruc_pago:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../img2/imagenes/instruc_pagobc.png) no-repeat;
+        background-size: 176px  50px;
+
+    }
+}

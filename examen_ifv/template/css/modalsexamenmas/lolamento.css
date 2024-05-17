@@ -1,0 +1,185 @@
+/*fondos de letra*/
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('../../../assets/fonts/Gotham-Medium.otf'); 
+  }
+  @font-face {
+      font-family: Gotham-Bold;
+      src: url('../../../assets/fonts/Gotham-Bold.otf'); 
+    }
+  @font-face {
+      font-family: Gotham-Light;
+      src: url('../../../assets/fonts/Gotham-Light.otf'); 
+    }
+  @font-face {
+      font-family: Gotham-Book;
+      src: url('../../../assets/fonts/Gotham-Book.otf'); 
+    }
+  @font-face {
+      font-family: GothamCond-Bold;
+      src: url('../../../assets/fonts/GothamCond-Bold.otf'); 
+    }
+/*fondos*/
+.popuplolamento{
+	display: inline-block;
+	padding: 7px 0;
+	width: 100px;
+	border-radius: 1px solid #ffff;
+	border-radius: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: blue;
+	background: white;
+}
+.modal-contenedorlolamento{
+	opacity: 0;
+	visibility: hidden;
+	position:fixed;
+	z-index:1000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popuplolamento {
+	width: 300px;
+	height: 500px;
+	background: #9f9b9b;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: relative;
+	transition: transform 1s;
+	transform: translateY(0%);
+	/* overflow: hidden; */
+	border-radius: 50px;
+	padding: 10px;
+}
+.cerralolamento {
+    position: absolute;
+    top: -15px;
+    right: -17px;
+    display: inline;
+    width: 51px;
+    height: 45px;
+    background: url(../../../assets/img2/imagenes/x.png);
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.cerralolamento:hover {
+	background: url(../../../assets/img2/imagenes/x_yellow.png);
+	position: absolute;
+    top: -15px;
+    right: -17px;
+    display: inline;
+    width: 51px;
+    height: 45px;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.modal-cerrarlolamento{
+	transform: translateY(-200%);
+}
+
+.cuerpololamento{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    color: white;
+    background-color: #afafaf;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    border-radius: 35px;
+}
+
+.cuerpololamento .mensajet{
+ font-size: 4em;
+ font-family: 'GothamCond-Bold';
+ font-weight: 500;
+}
+
+.cuerpololamento .mensajesubt {
+	font-size: 1.4em;
+	font-family: 'Gotham-Book';
+	font-weight: 100;
+}
+
+.cuerpololamento .primerboton {
+  width: 100%;
+  height: 100%;
+  background: url(1.png) no-repeat;
+  background-size: 250px 55px;
+  /* background-size: cover; */
+  background-position: center center;
+  /* background-attachment: fixed; */
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpololamento .primerboton:hover{
+  width: 100%;
+  height: 100%;
+  background: url(2.png) no-repeat;
+  background-size: 250px 55px;
+  /* background-size: cover; */
+  background-position: center center;
+  /* background-attachment: fixed; */
+  justify-content: center;
+  align-items: center;
+}
+
+.cuerpololamento .segundoboton {
+  
+  width: 100%;
+  height: 100%;
+  background: url(continuarr.png) no-repeat;
+  background-size: 250px 55px;
+  /* background-size: cover; */
+  background-position: center center;
+  /* background-attachment: fixed; */
+  justify-content: center;
+  align-items: center;
+  /*margin-bottom: -4.5rem;*/
+}
+
+.cuerpololamento .segundoboton:hover{
+  
+  width: 100%;
+  height: 100%;
+  background: url(continuarp.png) no-repeat;
+  background-size: 250px 55px;
+  /* background-size: cover; */
+  background-position: center center;
+  /* background-attachment: fixed; */
+  justify-content: center;
+  align-items: center;
+  /*margin-bottom: -4.5rem;*/
+}
+

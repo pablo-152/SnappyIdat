@@ -1,0 +1,785 @@
+/*fondos de letra*/
+@font-face {
+    font-family: Gotham-Medium;
+    src: url('../../fonts/Gotham-Medium.otf'); 
+  }
+  @font-face {
+      font-family: Gotham-Bold;
+      src: url('../../fonts/Gotham-Bold.otf'); 
+    }
+  @font-face {
+      font-family: Gotham-Light;
+      src: url('../../fonts/Gotham-Light.otf'); 
+    }
+  @font-face {
+      font-family: Gotham-Book;
+      src: url('../../fonts/Gotham-Book.otf'); 
+    }
+  @font-face {
+      font-family: GothamCond-Bold;
+      src: url('../../fonts/GothamCond-Bold.otf'); 
+    }
+/*fondos*/
+.popup3{
+	display: inline-block;
+	padding: 7px 0;
+	width: 100px;
+	border-radius: 1px solid #ffff;
+	border-radius: 50px;
+	text-align: center;
+	text-decoration: none;
+	color: blue;
+	background: white;
+}
+.modal-contenedor3{
+	opacity: 0;
+	visibility: hidden;
+	position:fixed;
+	z-index:1000;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup3 {
+    width: 345px;
+    height: 390px;
+    background: #9f9b9b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    /* overflow: hidden; */
+    border-radius: 50px;
+    padding: 10px;
+}
+.cerrar3 {
+    position: absolute;
+    top: -15px;
+    right: -17px;
+    display: inline;
+    width: 51px;
+    height: 45px;
+    background: url(../../img2/imagenes/x.png);
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.cerrar3:hover {
+	background: url(../../img2/imagenes/x_yellow.png);
+	position: absolute;
+    top: -15px;
+    right: -17px;
+    display: inline;
+    width: 51px;
+    height: 45px;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.modal-cerrar3{
+	transform: translateY(-200%);
+}
+.popup3 .cuerpo3 .ups > img {
+    height: 100%;
+}
+.popup3 .cuerpo3 {
+    background-color: #afafaf;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    /* text-align: center; */
+    /* line-height: 75px; */
+    font-size: 30px;
+    /* border: 2px solid black; */
+    padding: 10px;
+}
+.popup3 .cuerpo3 .linea1 {
+    order: 2;
+    background-color: #afafaf;
+    color: white;
+    width: 100%;
+    height: 21%;
+    border-radius: 24px;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    padding: 0px 10px 0px 35px;
+    display: flex;
+}
+.popup3 .cuerpo3 .linea1 .labeel {
+    font-size: 20px;
+    font-family: Gotham-Bold;
+}
+.popup3 .cuerpo3 .linea3 {
+    order: 4;
+    background-color: #afafaf;
+    color: white;
+    width: 100%;
+    display: flex;
+    height: 13%;
+    border-radius: 24px;
+    justify-content: left;
+    margin: 0px 0px 0px 0px;
+    text-align: left;
+    padding: 0px 24px 0px 33px;
+    flex-direction: column;
+}
+.popup3 .cuerpo3 .linea3 label {
+    font-size: 17px;
+    font-family: Gotham-Light;
+}
+
+.popup3 .cuerpo3 .linea3 .inputlinea3 .inputusu{
+    width: 100%;
+    height: 32px;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
+    background: #fff;
+    border: none;
+}
+.popup3 .cuerpo3 .linea5 {
+    order: 6;
+    background-color: #afafaf;
+    color: white;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-bottom: 16px;
+    padding: 0px 10px 0px 10px;
+    margin-top: 20px;
+}
+.popup3 .cuerpo3 .linea5 a.ingresa_tu {
+    width: 100%;
+    height: 100%;
+    background: url(../images/clave.png) no-repeat;
+    background-size: 317px 70px;
+    background-position: center center;
+
+}
+.popup3 .cuerpo3 .linea5  a.ingresa_tu:hover {
+	width: 100%;
+    height: 100%;
+    background: url(../images/clavebn.png) no-repeat;
+    background-size: 317px 70px;
+    /* background-size: cover; */
+    background-position: center center;
+    /* background-attachment: fixed; */
+    justify-content: center;
+    align-items: center;
+}
+.popup3 .cuerpo3 .linea6 {
+    order: 7;
+    background-color: #e5e5e5;
+    color: black;
+    width: 324px;
+    display: flex;
+    height: 15%;
+    /* border-radius: 24px; */
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* margin: 0px; */
+    margin-left: -10px;
+    padding: 0px 10px 0px 10px;
+    margin-top: -10px;
+}
+.hyphenation {
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+-webkit-hyphens: auto;
+  -moz-hyphens: auto;
+   -ms-hyphens: auto;
+	   hyphens: auto;
+}
+.popup3 .cuerpo3 .linea6 label {
+	font-size: 15px;
+	text-align: left;
+	font-family: Gotham-Light ;
+}
+.popup3 .cuerpo3 .linea6 .fb {
+	height: 5%;
+	width: 5%;
+}
+.popup3 .cuerpo3 .linea6 .ws {
+	height: 5%;
+	width: 5%;;
+}
+.popup3 .cuerpo3 .linea6 a.facebook{
+	text-decoration: none;
+	color:black !important;
+   }
+.popup3 .cuerpo3 .linea6 a.whatsapp{
+	text-decoration: none;
+	color: black !important;
+   }
+
+
+@media screen and (max-width:1000px){
+	section{
+		flex-direction: column-reverse;
+		/*align-content: center;*/
+	}
+	section > img{
+		height: 40%;
+	}
+}
+/* iphone 6+ 7+ 8+ */
+@media only screen 
+and (min-device-width : 401px) 
+and (max-device-width : 700px) 
+and (orientation : portrait) { 
+	/* STYLES GO HERE */
+	.popup3 {
+        width: 270px;
+        height: 450px;
+	}
+	.popup3 .cuerpo3 .linea6 {
+		width: 250px;
+    }
+    
+    .popup3 .cuerpo3 .linea1 {
+        order: 2;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 20%;
+        border-radius: 24px;
+        align-items: flex-start;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 10px 0px 25px;
+        display: flex;
+    }
+	.popup3 .cuerpo3 .linea6 label {
+		font-size: 11.5px;
+	}
+    .popup3 .cuerpo3 .linea1 {
+        order: 2;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 21%;
+        border-radius: 24px;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 10px 0px 35px;
+        display: flex;
+    }
+    .popup3 .cuerpo3 .linea1 .labeel {
+        font-size: 17px;
+        font-family: Gotham-Bold;
+    }
+    .popup3 .cuerpo3 .linea3 {
+        order: 4;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 14%;
+        border-radius: 24px;
+        justify-content: left;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 24px 0px 33px;
+        flex-direction: column;
+    }
+    .popup3 .cuerpo3 .linea3 label {
+        font-size: 13px;
+        font-family: Gotham-Light;
+    }
+    
+    .popup3 .cuerpo3 .linea3 .inputlinea3 .inputusu{
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        padding: 0px 10px 0px 10px;
+        background: #fff;
+        border: none;
+    }
+    .popup3 .cuerpo3 .linea5 {
+        order: 6;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 12%;
+        display: flex;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 16px;
+        padding: 0px 10px 0px 10px;
+        margin-top: 10px;
+    }
+    .popup3 .cuerpo3 .linea5 a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clave.png) no-repeat;
+        background-size: 232px 61px;
+        background-position: center center;
+    
+    }
+    .popup3 .cuerpo3 .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clavebn.png) no-repeat;
+        background-size: 232px 61px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* iphone 6 7 8 */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 400px) 
+and (orientation : portrait) {
+	 /* STYLES GO HERE */ 
+	.popup3 {
+		width: 300px;
+		height: 450px;
+	}
+	.popup3 .cuerpo3 .linea6 {
+		width: 280px;
+    }
+	.popup3 .cuerpo3 .linea6 label {
+		font-size: 13px;
+	}
+    .popup3 .cuerpo3 .linea1 {
+        order: 2;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 20%;
+        border-radius: 24px;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 10px 0px 25px;
+        display: flex;
+    }
+    .popup3 .cuerpo3 .linea1 .labeel {
+        font-size: 17px;
+        font-family: Gotham-Bold;
+    }
+    .popup3 .cuerpo3 .linea3 {
+        order: 4;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 14%;
+        border-radius: 24px;
+        justify-content: left;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 24px 0px 33px;
+        flex-direction: column;
+    }
+    .popup3 .cuerpo3 .linea3 label {
+        font-size: 13px;
+        font-family: Gotham-Light;
+    }
+    
+    .popup3 .cuerpo3 .linea3 .inputlinea3 .inputusu{
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        padding: 0px 10px 0px 10px;
+        background: #fff;
+        border: none;
+    }
+    .popup3 .cuerpo3 .linea5 {
+        order: 6;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 12%;
+        display: flex;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 16px;
+        padding: 0px 10px 0px 10px;
+        margin-top: 10px;
+    }
+    .popup3 .cuerpo3 .linea5 a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clave.png) no-repeat;
+        background-size: 259px 64px;
+        background-position: center center;
+    
+    }
+    .popup3 .cuerpo3 .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clavebn.png) no-repeat;
+        background-size: 259px 64px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen 
+and (max-width : 374px) and (orientation : portrait) {
+    	/* STYLES GO HERE */
+	.popup3 {
+		width: 300px;
+		height: 370px;
+	}
+	.popup3 .cuerpo3 .linea6 {
+		width: 280px;
+	}
+	.popup3 .cuerpo3 .linea6 label {
+		font-size: 13px;
+    }
+    .popup3 .cuerpo3 .linea1 {
+        order: 2;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 20%;
+        border-radius: 24px;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 10px 0px 25px;
+        display: flex;
+    }
+    .popup3 .cuerpo3 .linea1 .labeel {
+        font-size: 17px;
+        font-family: Gotham-Bold;
+    }
+    .popup3 .cuerpo3 .linea3 {
+        order: 4;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 14%;
+        border-radius: 24px;
+        justify-content: left;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 24px 0px 33px;
+        flex-direction: column;
+    }
+    .popup3 .cuerpo3 .linea3 label {
+        font-size: 13px;
+        font-family: Gotham-Light;
+    }
+    
+    .popup3 .cuerpo3 .linea3 .inputlinea3 .inputusu{
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        padding: 0px 10px 0px 10px;
+        background: #fff;
+        border: none;
+    }
+    .popup3 .cuerpo3 .linea5 {
+        order: 6;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 12%;
+        display: flex;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 16px;
+        padding: 0px 10px 0px 10px;
+        margin-top: 10px;
+    }
+    .popup3 .cuerpo3 .linea5 a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clave.png) no-repeat;
+        background-size: 232px 61px;
+        background-position: center center;
+    
+    }
+    .popup3 .cuerpo3 .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clavebn.png) no-repeat;
+        background-size: 232px 61px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen 
+and (max-width : 330px) and (orientation : portrait) {
+    	/* STYLES GO HERE */
+	.popup3 {
+        width: 260px;
+		height: 450px;
+	}
+	.popup3 .cuerpo3 .linea6 {
+        width: 240px;
+	}
+	.popup3 .cuerpo3 .linea6 label {
+        font-size: 11.5px;
+	}
+	.popup3 .cuerpo3 .linea1 {
+        order: 2;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 20%;
+        border-radius: 24px;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 10px 0px 25px;
+        display: flex;
+    }
+    .popup3 .cuerpo3 .linea1 .labeel {
+        font-size: 17px;
+        font-family: Gotham-Bold;
+    }
+    .popup3 .cuerpo3 .linea3 {
+        order: 4;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 14%;
+        border-radius: 24px;
+        justify-content: left;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 24px 0px 33px;
+        flex-direction: column;
+    }
+    .popup3 .cuerpo3 .linea3 label {
+        font-size: 13px;
+        font-family: Gotham-Light;
+    }
+    
+    .popup3 .cuerpo3 .linea3 .inputlinea3 .inputusu{
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        padding: 0px 10px 0px 10px;
+        background: #fff;
+        border: none;
+    }
+    .popup3 .cuerpo3 .linea5 {
+        order: 6;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 12%;
+        display: flex;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 16px;
+        padding: 0px 10px 0px 10px;
+        margin-top: 10px;
+    }
+    .popup3 .cuerpo3 .linea5 a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clave.png) no-repeat;
+        background-size: 222px 61px;
+        background-position: center center;
+    
+    }
+    .popup3 .cuerpo3 .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clavebn.png) no-repeat;
+        background-size: 222px 61px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen 
+and (max-width : 290px) and (orientation : portrait) {
+    	/* STYLES GO HERE */
+	.popup3 {
+        width: 235px;
+        height: 411px;
+	}
+	.popup3 .cuerpo3 .linea6 {
+        width: 215px;
+	}
+	.popup3 .cuerpo3 .linea6 label {
+        font-size: 10.5px;
+	}
+    .popup3 .cuerpo3 .linea1 {
+        order: 2;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 20%;
+        border-radius: 24px;
+        align-items: center;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 10px 0px 25px;
+        display: flex;
+    }
+    .popup3 .cuerpo3 .linea1 .labeel {
+        font-size: 15px;
+        font-family: Gotham-Bold;
+    }
+    .popup3 .cuerpo3 .linea3 {
+        order: 4;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        display: flex;
+        height: 15%;
+        border-radius: 24px;
+        justify-content: left;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        padding: 0px 24px 0px 33px;
+        flex-direction: column;
+    }
+    .popup3 .cuerpo3 .linea3 label {
+        font-size: 13px;
+        font-family: Gotham-Light;
+    }
+    
+    .popup3 .cuerpo3 .linea3 .inputlinea3 .inputusu{
+        width: 100%;
+        height: 32px;
+        font-size: 12px;
+        padding: 0px 10px 0px 10px;
+        background: #fff;
+        border: none;
+    }
+    .popup3 .cuerpo3 .linea5 {
+        order: 6;
+        background-color: #afafaf;
+        color: white;
+        width: 100%;
+        height: 12%;
+        display: flex;
+        border-radius: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0px 10px 0px 10px;
+        margin-top: 5px;
+    }
+    .popup3 .cuerpo3 .linea5 a.ingresa_tu {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clave.png) no-repeat;
+        background-size: 189px 56px;
+        background-position: center center;
+    
+    }
+    .popup3 .cuerpo3 .linea5  a.ingresa_tu:hover {
+        width: 100%;
+        height: 100%;
+        background: url(../images/clavebn.png) no-repeat;
+        background-size: 189px 56px;
+        /* background-size: cover; */
+        background-position: center center;
+        /* background-attachment: fixed; */
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+

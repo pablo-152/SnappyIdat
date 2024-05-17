@@ -1,0 +1,13 @@
+[24-Jun-2021 20:31:24 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/sistem19/public_html/snappy/snappy/link1/config/conexion.php on line 7
+[24-Jun-2021 20:32:21 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/sistem19/public_html/snappy/snappy/link1/config/conexion.php on line 7
+[25-Jun-2021 01:35:18 America/New_York] PHP Notice:  Undefined index: id_grado_escuela in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 125
+[25-Jun-2021 01:35:18 America/New_York] PHP Notice:  Undefined index: nom_grado_escuela in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 125
+[25-Jun-2021 01:35:18 America/New_York] PHP Notice:  Undefined index: id_grado_escuela in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 125
+[25-Jun-2021 01:35:18 America/New_York] PHP Notice:  Undefined index: nom_grado_escuela in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 125
+[25-Jun-2021 01:35:18 America/New_York] PHP Notice:  Undefined index: id_grado_escuela in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 125
+[25-Jun-2021 01:35:18 America/New_York] PHP Notice:  Undefined index: nom_grado_escuela in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 125
+[25-Jun-2021 09:38:19 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 8
+[25-Jun-2021 09:38:20 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 9
+[25-Jun-2021 09:38:20 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 8
+[25-Jun-2021 09:38:20 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/sistem19/public_html/snappy/snappy/LL1/index.php on line 9
+[23-Sep-2021 14:08:39 America/New_York] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/sistem19/public_html/snappy/snappy/LL1/config/conexion.php on line 7

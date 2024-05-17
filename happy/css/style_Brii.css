@@ -1,0 +1,1352 @@
+
+/******************** MIS COLORES **************************/
+
+
+/*** 
+
+====================================================================
+	Global style slaider
+====================================================================
+
+ ***/
+/* info span */
+
+.icono{
+	width: 100px;
+	 height: 100px;
+	                     -moz-border-radius: 25%;
+	                     -webkit-border-radius: 50%;
+	                     border-radius: 50%;
+	                     background: #ffffff;
+
+	                    font-size:20px;
+	                    color:#044E80 ;
+	                    width: 33px;
+	                    height: 33px;
+	                    text-align: center;
+	                    background: #2E9AFE
+	                    border: 1px solid #ffffff;
+	                    border-radius: 50%;
+	                    line-height: 33px;
+	                    transition:all 500ms ease;
+	}
+
+
+.main-header .header-top .header-info span{
+	font-size: 13px;
+	color: #A31C5B;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: capitalize;
+}
+.btn-style-one{
+	position:relative;
+	padding: 12px 40px;
+	line-height: 21px;
+	text-transform:uppercase;
+	color: #222222;
+	font-size:16px;
+	font-weight:500;
+	font-family: 'Poppins', sans-serif;
+	transition:all 500ms ease;
+	border-radius: 25px;
+	display: inline-block;
+}
+ 
+
+/* background-color-transparent */
+.bg-theme-colored-transparent-9 {
+  background-color: rgba(255, 87, 34, 0.9);
+}
+.bg-theme-colored-transparent-8 {
+  background-color: rgba(255, 87, 34, 0.8);
+}
+.bg-theme-colored-transparent-7 {
+  background-color: rgba(255, 87, 34, 0.7);
+}
+.bg-theme-colored-transparent-6 {
+  background-color: rgba(255, 87, 34, 0.6);
+}
+.bg-theme-colored-transparent-5 {
+  background-color: rgba(255, 87, 34, 0.5);
+}
+.bg-theme-colored-transparent-4 {
+  background-color: rgba(255, 87, 34, 0.4);
+}
+.bg-theme-colored-transparent-3 {
+  background-color: rgba(255, 87, 34, 0.3);
+}
+.bg-theme-colored-transparent-2 {
+  background-color: rgba(255, 87, 34, 0.2);
+}
+.bg-theme-colored-transparent-1 {
+  background-color: rgba(255, 87, 34, 0.1);
+}
+.bg-theme-colored-transparent,
+.piechart-block {
+  background-color: rgba(255, 87, 34, 0.75) !important;
+}
+.text-white {
+  color: #fff !important;
+}
+
+
+
+.btn-theme-colored {
+  color: #fff;
+  background-color: #ffff;
+  border-color: #ffff;
+}
+.btn-theme-colored:focus,
+.btn-theme-colored.focus {
+  color: #fff;
+  background-color: #ee3900;
+  border-color: #a22700;
+}
+.btn-theme-colored:hover {
+  color: #fff;
+  background-color: #ee3900;
+  border-color: #e43700;
+}
+.btn-theme-colored:active,
+.btn-theme-colored.active,
+.open > .dropdown-toggle.btn-theme-colored {
+  color: #fff;
+  background-color: #ee3900;
+  border-color: #e43700;
+}
+
+.btn-theme-color {
+  color: #fff;
+  background-color: #ffff;
+  border-color: #ffff;
+}
+.btn-theme-color:focus,
+.btn-theme-color.focus {
+  color: #fff;
+  background-color: #ee3900;
+  border-color: #a22700;
+}
+.btn-theme-color:hover {
+  color: #fff;
+  background-color: #24c4f4;
+  border-color: #e43700;
+}
+.btn-theme-color:active,
+.btn-theme-color.active,
+.open > .dropdown-toggle.btn-theme-color {
+  color: #fff;
+  background-color: #ee3900;
+  border-color: #e43700;
+}
+
+body {
+	
+}
+
+a{
+	color: #000099;
+}
+.sec-title h3 span{
+	color: #ffff;
+}
+.btn-style-one:hover{
+	color: #ffff;
+}
+
+.btn-style-two{
+	background:#ffff;
+	border:1px solid #22b9e6;
+	border-color:#24c4f4;
+	
+}
+
+.btn-style-two:hover{
+	color:#ffffff !important;
+	border-color:#fff;
+
+}
+.btn-style-three{
+	color:#ffffff;
+	border:2px solid #ffff;
+}
+.btn-style-three:hover{
+	border-color:#ffff;
+	background:#24c4f4;
+}
+
+.btn-style-thre{
+	position:relative;
+	padding:11px 25px;
+	line-height:20px;
+	text-transform:uppercase;
+	background: #E81F76;
+	color:#0080FF ;
+	font-size:14px;
+	display: inline-block;
+	font-weight:500;
+	border:2px solid #926178;
+	font-family: 'Poppins', sans-serif;
+	transition:all 500ms ease;
+	border-radius: 25px;
+}
+.btn-style-thre:hover{
+	color:#ffffff;
+	border-color:#E81F76;
+	background:#E81F76;	
+	transition:all 500ms ease;
+}
+
+.btn-style-thre1:hover{
+	color:#ffffff;
+	border-color:#ffff;
+	background:#ffff;	
+	transition:all 500ms ease;
+}
+.btn-style-thre1{
+	position:relative;
+	padding:11px 25px;
+	line-height:20px;
+	text-transform:uppercase;
+	background: #E81F76;
+	color:#ffffff ;
+	font-size:14px;
+	display: inline-block;
+	font-weight:500;
+	border:2px solid #E81F76;
+	font-family: 'Poppins', sans-serif;
+	transition:all 500ms ease;
+	border-radius: 25px;
+}
+
+/*.preloader{ 
+	position:fixed; 
+	left:0px; 
+	top:0px; 
+	height:100%; 
+	width: 100%; 
+	z-index:999999; 
+	background-color:#ffffff; 
+	background-position:center center; 
+	background-repeat:no-repeat; 
+	background-image:url(../images/icons/mundo.gif);
+}*/
+
+/*** 
+
+====================================================================
+	Scroll To Top style
+====================================================================
+
+***/
+.scroll-to-top{
+	background: #ffff;	
+}
+.scroll-to-top:hover{
+	color:#ffff;
+	border-color: #ffff;
+}
+
+/*** 
+
+====================================================================
+	Main Header style
+====================================================================
+
+***/
+/**.main-header .header-top i{
+	color:#fff !important;
+}
+.main-header .header-top i{
+	background: #ffffff;
+	border-color: #ffffff;
+	color: #ffff !important;
+}**/
+
+.main-header .header-top i{
+width: 100px;
+     height: 100px;
+     -moz-border-radius: 25%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #ffffff;
+}
+
+
+
+.main-header .header-top i{
+	font-size:20px;
+	color:#24c4f4;
+	width: 33px;
+	height: 33px;
+	text-align: center;
+	background: #24c4f4
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	line-height: 33px;
+	transition:all 500ms ease;
+}
+
+/*.main-header .header-top .header-info i{
+	position: absolute;
+	left: -70px;
+	top: 0px;
+}*/
+
+
+
+/*** #24c4f4
+=============================================
+    Header-search
+=============================================
+***/
+
+.header-search {
+    background: #160f09;
+}
+
+
+.header-search .search input[type="text"], .header-search input[type="search"] {
+    border: 1px solid #ffff;
+}
+.header-search button {
+    background: #ffff;
+    border: 1px solid #3f2e1f;
+}
+.header-search .search input:focus {
+    border: 1px solid #ffff;
+}
+.header-search .search input:focus + button, .header-search .search input button:hover {
+    background: #ffff none repeat scroll 0 0;
+    color: #ffff;
+    border: 1px solid #ffff;
+}
+.search-button .toggle-search button {
+    background: #ffff none repeat scroll 0 0;
+}
+.header-lower .header-area{
+	background: #ffff;
+}
+.main-menu .navigation > li > ul > li > a{
+	background: #ffff;
+}
+.main-menu .navigation > li > ul > li:hover > a{
+	color: #ffff;
+}
+.main-header .search-form-icon [placeholder]:focus{
+	border: 1px solid #26c75b;
+}
+.main-header .search-form-icon span:hover{
+	color: #26c75b;
+}
+.fixed-header .sticky-header{
+	background: #22b9e6;
+}
+.header-lower .header-area .link-btn:after{
+	background: #ffff;
+}
+
+.sticky-header .logo2{
+	float: right;
+	padding:6px 0px 2px;	
+}
+
+.main-header .sticky-header .logo2 img{
+	position: relative;
+	top: 0px;
+}
+
+
+/*** 
+
+====================================================================
+	Main Slider style
+====================================================================
+
+***/
+.main-slider h2{
+	color:#2E9AFE;
+}
+.main-slider p{
+	color:#000000;
+	font-weight:bold;
+}
+.testimonial-section .sec-title span{
+	color: #ffffff;
+}
+
+
+/*** 
+
+====================================================================
+texto style
+====================================================================
+}*/
+.sec-title h3{
+	font-size: 32px;
+	color:#0071BA;
+	line-height: 42px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.sec-title h3 span{
+	color: #ffffff;
+	 font-family: 'Bebas Neue Regular';
+	  font-weight: normal;
+   font-style: normal;
+}
+
+
+
+        .button-success,
+        .button-success1;
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        .button-success {
+            background:#E81F76;
+           border-radius: 12px;
+		    font-size: 36px;
+		    color:#fff;
+		    font-family: Schadow BT Roman;
+		    line-height: 1.3333333;
+		    
+        }
+         .button-success1 {
+            background:#E81F76;
+           border-radius: 1px;
+		    font-size: 15px;
+		    color:#fff;
+		    font-family: Schadow BT Roman;
+		    line-height: 1.3333333;
+		    
+        }
+
+        .button-error {
+            background: rgb(202, 60, 60); /* this is a maroon */
+        }
+
+        .button-warning {
+            background: rgb(223, 117, 20); /* this is an orange */
+        }
+
+        .button-secondary {
+            background: rgb(66, 184, 221); /* this is a light blue */
+        }
+
+        .form-control1 {
+	    display: block;
+	    width: 100%;
+	    height: 34px;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    color: #555;
+	    background-color: #fff;
+	    background-image: none;
+	    border: 1px solid #ccc;
+	    border-radius: 1px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+	    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+textarea.form-control1 {
+    height: auto;
+}
+
+
+
+/*** 
+
+====================================================================
+	Couses section style
+====================================================================
+
+span{
+	color: #A31C5B;
+}*/
+
+/*** ***/
+
+/*.couses-section .image-box .donate-piechart .piechart-block {
+	background-color: #A31C5B;
+}
+
+.couses-section 
+
+====================================================================
+	welcome section style
+====================================================================
+
+***/
+
+.welcome-section .image-content .item:hover{
+	background: #2E9AFE;
+	border: 1px solid #2E9AFE;
+}
+.welcome-section .image-content .item span:before{
+
+	color: #2E9AFE;
+}
+.welcome-section .image-content .item h6{
+	text-transform: uppercase;
+}
+
+/*** 
+
+====================================================================
+	Volunteers-section style
+====================================================================
+
+***/
+
+.volunteers-section .image-holder h5{
+	background: url(../images/resource/bd1.png) no-repeat scroll center bottom;
+	text-transform: uppercase;
+}
+.volunteers-section .contact-list i:hover{
+	color: #2E9AFE;
+	border-color: #2E9AFE;
+}
+.volunteers-section .image-holder:hover h5{
+	background: url(../images/resource/bd.png) no-repeat scroll center bottom;
+}
+.volunteers-section .image-holder:hover .image-box img{
+	border: 8px solid #2E9AFE;
+}
+.volunteers-section .image-holder:hover h5{
+	color: #2E9AFE;
+}
+.volunteers-section .image-holder:hover .link-btn a{
+	background: #2E9AFE;
+}
+
+/*** 
+
+====================================================================
+	Gallery-section style
+====================================================================
+
+***/
+
+.gellary-fullwidth .overlay-box i{
+  color: #2E9AFE;
+}
+
+.gellary-fullwidth .inner-box .img_holder img{
+  position: relative;
+  width: 600px;
+  height: 250px;
+}
+  
+
+/*** 
+
+====================================================================
+	Subscribe-section style
+====================================================================
+
+***/
+
+.gellary-subscribe{
+/*background: #2E9AFE;*/
+}
+.gellary-subscribe .link-btn a{
+	color: #2E9AFE;
+}
+
+
+
+/*** 
+
+====================================================================
+	Events-section style
+====================================================================
+
+***/
+
+.events-section h3{
+	background: url(../images/resource/bd.png) no-repeat scroll left bottom;
+	text-transform: uppercase;
+}
+
+.events-section .slide-item h5{
+	background: #2E9AFE;
+}
+.events-section .right-side li i{
+	color: #2E9AFE;
+}
+.events-section .slider-pager .nav-link li{
+	color: #2E9AFE;
+	border: 1px solid #2E9AFE;
+}
+.events-section .slider-pager .nav-link li:hover{
+	background: #2E9AFE;
+	border: 1px solid #2E9AFE;
+}
+
+.comment-box h4{
+  background: url(../images/resource/bd.png) no-repeat scroll left bottom;
+}
+
+.comment-box .type-payment li.current i,
+.comment-box .type-payment li:hover i{
+	color: #2E9AFE;
+}
+/*** 
+
+====================================================================
+	Testimonials Section
+====================================================================
+
+***/
+
+.testimonial-section .icon-quort i{
+	background: #2E9AFE;
+}
+.testimonial-section .author-info h4{
+	color: #2E9AFE;
+}
+.owl-theme .owl-controls .owl-dots .owl-dot.active span{
+    background: #2E9AFE;
+}
+
+
+/*** 
+
+====================================================================
+	News-section style
+====================================================================
+
+***/
+
+.news-section .image-holder .image-content h4{
+	background: #2E9AFE;
+}
+.news-section .image-content .blog-info li i{
+	color: #2E9AFE;
+}
+
+/*** 
+
+====================================================================
+  Sponsors Style
+====================================================================
+
+***/
+
+.sponsors-logos .image-holder:hover .image-box img{
+	border: 1px solid #2E9AFE;
+}
+.sponsors-logos .image-holder:hover .image-overly img{
+	background: #2E9AFE;
+	border: 1px solid #2E9AFE;
+}
+
+
+/*** 
+
+====================================================================
+  Sponsors subscribe style
+====================================================================
+
+***/
+
+
+.sponsors-subscribe {
+    background: #2E9AFE;
+}
+.sponsors-subscribe .icon-links i:hover{
+	color: #2E9AFE;
+}
+.sponsors-subscribe input[type="submit"], 
+.sponsors-subscribe button {
+    color: #2E9AFE;
+}
+
+
+/*** 
+
+====================================================================
+	Main-footer style
+====================================================================
+
+***/
+
+.main-footer .widgets-section .link-btn a{
+	color: #2E9AFE;
+}
+.main-footer .widgets-section .links-list li a:hover{
+	color: #2E9AFE;
+}
+
+/*** =======================End home page =====================***/
+
+
+/*** 
+
+====================================================================
+  Page Title Style
+====================================================================
+
+***/
+
+.page-title .title-text .title-menu li{
+  color: #2E9AFE;
+}
+.page-title .title-text .title-menu li a:hover{
+  color: #2E9AFE; 
+}
+
+
+/*** 
+
+====================================================================
+  Styled Pagination
+====================================================================
+
+**/
+.styled-pagination li a:hover,
+.styled-pagination li a.active{  
+  background: #2E9AFE;
+}
+
+
+/*** 
+
+====================================================================
+   About section Style
+====================================================================
+
+***/
+
+
+
+/*** 
+
+====================================================================
+   Couse details Style
+====================================================================
+
+***/
+
+.couses-section .right-side .search-box{
+  border: 1px solid #2E9AFE;
+}
+.couses-section .right-side .search-box button{
+  background: #2E9AFE;
+}
+.couses-section .right-side .categorise-menu li a:hover{
+  color: #2E9AFE;
+}
+.couses-section .right-side .tags-list li a:hover{
+	background: #2E9AFE;
+	border: 1px solid #2E9AFE;
+}
+
+.couses-section1{
+  background: #f5f5f5;
+}
+
+/*** 
+
+====================================================================
+   Events-section style-two
+====================================================================
+
+***/
+
+.events-section.style-two .right-side .link-btn a{
+	color: #2E9AFE;
+}
+
+/*** 
+
+====================================================================
+    Events-details  style
+====================================================================
+
+***/
+
+.image-content .feture-list li i{
+	color: #2E9AFE;
+	margin-right: 10px;
+}
+
+/*** 
+====================================================================
+    Countdown-timer style
+====================================================================
+
+***/
+
+.couses-section.style-four .image-holder .image-content h5{
+	background: #2E9AFE;
+}
+.couses-section.style-four .image-content .blog-info li i{
+	color: #2E9AFE;
+}
+.couses-section.style-four .default-form input[type="text"]:focus,
+.couses-section.style-four .default-form input[type="email"]:focus,
+.couses-section.style-four .default-form input[type="password"]:focus,
+.couses-section.style-four .default-form input[type="number"]:focus,
+.couses-section.style-four .default-form select:focus,
+.couses-section.style-four .default-form textarea:focus {
+    border: 1px solid #2E9AFE;
+}
+
+
+
+/*** 
+
+====================================================================
+   team-page
+====================================================================
+
+***/
+
+
+
+/*** 
+
+====================================================================
+   gallery page
+====================================================================
+
+***/
+
+.gallery-section .filters li{
+    border: 1px solid #2E9AFE;
+}
+
+.gallery-section .filters li:hover,
+.gallery-section .filters li.active{
+	color: #ffffff;
+    background: #2E9AFE;
+}
+/*
+.default-portfolio-item .inner-box .overlay-box i{
+	color: #A31C5B;
+	background: #ffffff;	
+}
+.default-portfolio-item .inner-box .overlay-box i:hover{
+	color: #ffffff;
+	background: #A31C5B;
+}*/
+
+
+
+/* TAMAÑO IMAGEN */
+
+
+.sortable-masonry .items-container{
+	margin-left:-15px;
+	margin-right:-15px;	
+}
+
+.sortable-masonry .masonry-item{
+	margin-bottom:30px;
+	padding:0px 15px;
+}
+.sortable-masonry.style-two .masonry-item{
+	margin-bottom:0px;
+	padding:0px 0px;
+}
+.default-portfolio-item .inner-box{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+.default-portfolio-item .image-box{
+	position:relative;
+	display:block;	
+
+}
+.default-portfolio-item .image-box img{
+	position:relative;
+	display:block;
+	/*width:100%;*/
+	height: 160px;
+	border-radius: 7px;
+
+	margin:0 auto 0 auto;
+}
+.default-portfolio-item .overlay-box{
+	position:absolute;
+	left:0px;
+	top:-100%;
+	width:100%;
+	height:100%;
+	border-radius: 7px;
+	text-align:center;
+	color:#ffffff;
+	background: rgba(52, 55, 57, 0.7);
+	transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-webkit-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	transform:scaleY(0);
+}
+.default-portfolio-item .inner-box:hover .overlay-box{
+	top:0px;
+	border-radius: 7px;
+	-webkit-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	transform:scaleY(1);	
+}
+.default-portfolio-item .inner-box .overlay-box i{
+	color: #2E9AFE;
+	background: #ffffff;
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	margin-top: 50px;
+	line-height: 55px;
+	transition: all 500ms ease;	
+}
+.default-portfolio-item .inner-box .overlay-box i:hover{
+	color: #ffffff;
+	background: #2E9AFE;
+	transition: all 500ms ease;	
+}
+/* FIN TAMAÑO IMAGEN */
+
+/*********************************** nuevo PLANO DE FERIA***********************************************************************************/
+
+
+.default-portfolio-item .inner-box1{
+	position:relative;
+	width:50%;
+	overflow:hidden;
+}
+.default-portfolio-item .image-box1{
+	position:relative;
+	display:block;	
+
+}
+.default-portfolio-item .image-box1 img{
+	position:relative;
+	display:block;
+	/*width:100%;*/
+	height: 50%;
+	border-radius: 7px;
+
+	margin:0 auto 0 auto;
+}
+
+
+.default-portfolio-item .overlay-box1{
+	position:absolute;
+	left:30px;
+	top:-50%;
+	width:53%;
+	height:100%;
+	border-radius: 7px;
+	text-align:center ; /* CENTER */
+	color:#ffffff;
+	background: rgba(52, 55, 57, 0.7);
+	transition: all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-webkit-transform:scaleY(0);
+	-ms-transform:scaleY(0);
+	-o-transform:scaleY(0);
+	-moz-transform:scaleY(0);
+	transform:scaleY(0);
+}
+.default-portfolio-item .inner-box1:hover .overlay-box1{
+	top:0px;
+	border-radius: 7px;
+	-webkit-transform:scaleY(1);
+	-ms-transform:scaleY(1);
+	-o-transform:scaleY(1);
+	-moz-transform:scaleY(1);
+	transform:scaleY(1);	
+}
+.default-portfolio-item .inner-box1 .overlay-box1 i{
+	color: #2E9AFE;
+	background: #ffffff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	line-height: 40px;
+	transition: all 500ms ease;	
+}
+.default-portfolio-item .inner-box1 .overlay-box1 i:hover{
+	color: #ffffff;
+	background: #2E9AFE;
+	transition: all 500ms ease;	
+}
+.gellary-fullwidth .overlay-box1 i{
+  color: #2E9AFE;
+}
+
+/*** 
+
+====================================================================
+	        Single-profile style
+====================================================================
+
+***/
+.single-profile .image-holder .image-text span{
+	color: #A31C5B;
+}
+.single-profile .image-holder .social-links li i:hover{
+	background: #A31C5B;
+	border: 1px solid #A31C5B;
+}
+/*** 
+===================================================================
+  Map Section
+====================================================================
+
+***/
+.contact-section .default-form input[type="text"]:focus,
+.contact-section .default-form input[type="email"]:focus,
+.contact-section .default-form input[type="password"]:focus,
+.contact-section .default-form input[type="number"]:focus,
+.contact-section .default-form select:focus,
+.contact-section .default-form textarea:focus {
+    border: 1px solid #A31C5B;
+    color: #24c4f4;
+}
+.contact-section h3{
+	position: relative;
+	background: url(../images/resource/bd.png) no-repeat scroll left bottom;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 36px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-section .contact-list .item i{
+	color: #A31C5B;
+
+}
+/*** 
+
+====================================================================
+nuevos estylos
+====================================================================
+
+***/
+
+.volunteers-section .image-holderr{
+	position: relative;
+	border: 1px solid #e5e5e5;
+	padding: 25px 20px;
+	padding-top: 114px;
+	border-radius: 10px;
+	transition:all 500ms ease;
+	background: #A31C5B;
+}
+.volunteers-section .image-holderr h5{
+	position: relative;
+	background: url(../images/resource/bd1.png) no-repeat scroll center bottom;
+	font-size: 22px;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	font-weight: 600;
+	line-height: 32px;
+	color: #fff;
+	text-transform: uppercase;
+}
+/**********************************************
+	-	otros	-
+**********************************************/
+   .sm-height-auto {
+   min-height: auto !important;
+   }
+		
+ .bg-theme-colored-lighter4 {
+    background-color: #ff7246 !important;
+  }
+  .bg-theme-colored-lighter4 {
+      background-color: #ff7246 !important;
+    }
+
+/**********************************************
+	-	FULLSCREEN AND FULLWIDHT CONTAINERS	-
+**********************************************/
+.rev_slider_wrapper	{	width:100%;}
+
+.fullscreen-container {	
+	position:relative;
+	padding:0;
+}
+.fullwidthbanner-container{
+	position:relative;
+	padding:0;
+	overflow:hidden;
+}
+.fullwidthbanner-container .fullwidthabanner{
+	width:100%;
+	position:relative;
+}
+/*********************************
+	-	SPECIAL TP CAPTIONS -
+**********************************/
+
+.tp-static-layers				{	
+	position:absolute; z-index:101; top:0px;left:0px;
+	/*pointer-events:none;*/
+}
+.tp-caption .frontcorner		{
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 40px solid #00A8FF;
+	position: absolute;left:-40px;top:0px;
+}
+.tp-caption .backcorner		{
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 40px solid #00A8FF;
+	position: absolute;right:0px;top:0px;
+}
+.tp-caption .frontcornertop		{
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 0px solid transparent;
+	border-bottom: 40px solid #00A8FF;
+	position: absolute;left:-40px;top:0px;
+}
+.tp-caption .backcornertop		{
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 40px solid transparent;
+	border-top: 40px solid #00A8FF;
+	position: absolute;right:0px;top:0px;
+}
+			
+.tp-layer-inner-rotation {	
+	position: relative !important;
+}		
+/***********************************************
+	-	SPECIAL ALTERNATIVE IMAGE SETTINGS	-
+***********************************************/
+
+img.tp-slider-alternative-image	{	
+	width:100%; height:auto;
+}
+
+/***************
+
+md-icon {
+    margin: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    fill: currentColor;
+    height: 24px;
+    width: 24px;
+    min-height: 24px;
+    min-width: 24px;
+}
+md-icon.md-default-theme, md-icon {
+    color: rgba(0,0,0,0.54);
+}
+md-icon svg {
+    pointer-events: none;
+    display: block;
+}
+svg[Attributes Style] {
+    x: 0px;
+    y: 0px;
+    width: 100%;
+    height: 100%;
+}
+user agent stylesheet
+svg:not(:root), symbol, image, marker, pattern, foreignObject {
+    overflow: hidden;
+}
+user agent stylesheet
+html|* > svg {
+    transform-origin: 50% 50% 0px;
+}
+user agent stylesheet
+* {
+    transform-origin: 0px 0px 0px;
+}
+*/
+/***** effect1  proyecto*****/
+/*---------------*/
+
+.owl-controls .owl-nav > div {
+  background: none repeat scroll 0 0 rgba(240, 240, 240, 0.8);
+  border-radius: 0;
+  display: block;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  z-index: 6;
+}
+
+.box-hover-effect.effect1 .thumb {
+  position: relative;
+  overflow: hidden;
+}
+.box-hover-effect.effect1 .thumb:after {
+  background-color: rgba(255, 255, 255, 0.15);
+  bottom: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+}
+.box-hover-effect.effect1 .thumb:before {
+  left: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  width: 0;
+  z-index: 1;
+}
+.box-hover-effect.effect1:hover .thumb:before,
+.box-hover-effect.effect1:hover .thumb:after {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+/* Owl top nav style */
+.owl-carousel.owl-nav-top.bullet-white .owl-dots span {
+  background: transparent;
+}
+.owl-carousel.owl-nav-top .owl-controls .owl-nav > div {
+  background-color: transparent;
+  top: -45px;
+  right: 0;
+}
+.owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-prev {
+  right: 30px;
+}
+.owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-next {
+  right: 0;
+}
+.owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-prev,
+.owl-carousel.owl-nav-top .owl-controls .owl-nav .owl-next {
+  border: none;
+  line-height: 22px;
+  padding: 0 9px;
+  text-align: center;
+}
+/* -------- Owl Fullwidth Carousel ---------- */
+.fullwidth-carousel .owl-controls .owl-nav > div {
+  top: 45%;
+}
+.fullwidth-carousel .carousel-item {
+  min-height: 615px;
+  width: 100%;
+}
+.fullwidth-carousel.blog-fullwidth-carousel .carousel-item {
+  height: 600px;
+  min-height: auto;
+  width: 100%;
+}
+.fullwidth-carousel.blog-fullwidth-carousel .owl-controls .owl-nav > div {
+  background: none;
+}
+.news-carousel-3col .item {
+  margin-right: 25px;
+}
+/********* **********/
+.page-top{
+  background: #ffff;
+  padding: 100px 0px;
+}
+.nosotros{
+  background:#0071BA;
+  padding: 100px 0px;
+}
+
+.nosotros img{
+	position: relative;
+	width: 100%;
+	border-color: #f7f7f7;
+	border-radius: 10px 10px 0px 0px;
+}
+.nosotros .image-holder{
+	border-radius: 8px;
+	border-color: #f7f7f7;
+	box-shadow: 0 0 10px 5px #f7f7f7;
+}
+.nosotros .image-holder .image-content{
+	position: relative;
+	padding: 25px;
+	border: 1px solid #e5e5e5;
+	border-radius: 0px 0px 10px 10px;}	
+.nosotros span{
+	margin-left: 10px;
+	color: #ffffff;
+}
+.nosotros .image-holder .image-content .link-btn{
+	margin-bottom: 10px;
+}
+
+.owl-carousel .item{
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/****************************************************/
+ 
+.eventos{
+  background: #f5f5f5;
+  padding: 100px 0px;
+}
+.eventos figure{
+	position: relative;
+	width: 100%;
+	border-color: #f7f7f7;
+	border-radius: 10px 10px 0px 0px;
+}
+.nosotros .image-holder{
+	border-radius: 8px;
+	border-color: #f7f7f7;
+	box-shadow: 0 0 10px 5px #f7f7f7;
+}
+
+
+.contacto{
+  background: #0080FF;
+  padding: 100px 0px;
+}

@@ -1,0 +1,282 @@
+/*fondos de letra*/
+@font-face {
+	font-family: GothamCond-Bold;
+	src: url('../fonts/GothamCond-Bold.otf'); 
+  }
+  @font-face {
+	font-family: Gotham-Light;
+	src: url('../fonts/Gotham-Light.otf'); 
+  }
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(../img7/fondo_1.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hyphenation {
+	word-break: break-all;
+	/* Non standard for webkit */
+	word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor .form {
+    width: 90%;
+    max-width: 706px;
+    /* margin: 0px 0px 0px 20%; */
+    /* padding: 5px 35px; */
+    /* margin-bottom: 30px; */
+    /* border-radius: 3px; */
+    /* padding-top: 10px; */
+
+}
+.contenedor .form .form-header .form-title {
+    color: #fff;
+    padding: 50px 0px 10px 0px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 93px;
+    font-family: GothamCond-Bold;
+    position: relative;
+    transition: all .5s ease;
+}
+.contenedor .form .form-label2 {
+    display: block;
+    justify-content: center;
+    color: #ffffff;
+    padding: 0px 0px 6px 0px;
+    font-size: 19px;
+    font-family: Gotham-Light;
+    position: relative;
+    transition: all .5s ease;
+    font-weight: 100;
+    letter-spacing: 0px;
+    /* margin-bottom: 40px; */
+}
+
+.contenedor .form .btn-submit {
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 100px;
+    display: inline-block;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease 0s;
+    background: url(../img7/img_recortado.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+  /*  background-attachment: fixed;*/
+/*comaptible  con el resto de navegadores*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+}
+    .contenedor .form .btn-submit:hover{
+        -webkit-box-shadow: 10px 12px 31px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 12px 31px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 12px 31px 0px rgba(0,0,0,0.75);
+        transition: all 0.4s ease 0s;
+    }
+    .form .fila {
+        margin-bottom: 0px;
+    }
+    .padre {
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+  
+  
+  @media (max-width: 800px) {
+    body {
+        background: url(../img7/fondo_1_500.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    }
+
+    @media (max-width: 500px) {
+        body {
+            background: url(../img7/fondo_1_800.jpg);
+            -webkit-background-size:cover;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        }
+
+
+@media (max-width: 440px) {
+    body {
+        background: url(../img7/fondo_1.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .contenedor .form .btn-submit {
+        width: 250px;
+        height: 30px;
+        margin-top: 20px;
+        border-radius: 100px;
+        display: inline-block;
+        border: none;
+        outline: none;
+        transition: all 0.4s ease 0s;
+        background: url(../img7/img_recortado.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+      /*  background-attachment: fixed;*/
+    /*comaptible  con el resto de navegadores*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        -webkit-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    }
+}
+@media (max-width: 410px) {
+    body {
+        background: url(../img7/fondo_1.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 390px) {
+    body {
+        background: url(../img7/fondo_1_390.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .contenedor .form .btn-submit {
+        width: 250px;
+        height: 30px;
+        margin-top: 20px;
+        border-radius: 100px;
+        display: inline-block;
+        border: none;
+        outline: none;
+        transition: all 0.4s ease 0s;
+        background: url(../img7/img_recortado.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+      /*  background-attachment: fixed;*/
+    /*comaptible  con el resto de navegadores*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        -webkit-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    }
+    .contenedor .form .form-header .form-title {
+        color: #fff;
+        padding: 50px 0px 10px 0px;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        font-size: 93px;
+        font-family: GothamCond-Bold;
+        position: relative;
+        transition: all .5s ease;
+    }
+    .contenedor .form .form-label2 {
+        display: block;
+        justify-content: center;
+        color: #ffffff;
+        padding: 0px 0px 6px 0px;
+        font-size: 19px;
+        font-family: Gotham-Light;
+        position: relative;
+        transition: all .5s ease;
+        font-weight: 100;
+        letter-spacing: 0px;
+        /* margin-bottom: 40px; */
+    }
+}
+@media (max-width: 300px) {
+    body {
+        background: url(../img7/fondo_1_390.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    }
+    .contenedor .form .btn-submit {
+        width: 250px;
+        height: 30px;
+        margin-top: 20px;
+        border-radius: 100px;
+        display: inline-block;
+        border: none;
+        outline: none;
+        transition: all 0.4s ease 0s;
+        background: url(../img7/img_recortado.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+      /*  background-attachment: fixed;*/
+    /*comaptible  con el resto de navegadores*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        -webkit-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 7px 5px 0px rgba(0,0,0,0.75);
+    }
+    .contenedor .form .form-header .form-title {
+        font-size: 70px;
+    }
+    .contenedor .form .form-label2 {
+        font-size: 14px;
+    }
+}
+@media (max-width: 290px) {
+    body {
+        background: url(../img7/fondo_1_290.jpg);
+        -webkit-background-size:cover;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .contenedor .form .btn-submit {
+        width: 173px;
+        height: 21px;
+    }
+}
+
