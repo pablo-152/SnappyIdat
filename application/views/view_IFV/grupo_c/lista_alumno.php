@@ -9,7 +9,6 @@
             <th class="text-center" width="8%">Matricula</th>
             <th class="text-center" width="8%">Alumno</th>
             <th class="text-center" width="6%" title="Documentos">Doc.</th>
-            <th class="text-center" width="6%"></th>
         </tr> 
     </thead>
     <tbody>
@@ -29,16 +28,6 @@
                         <span class="badge" style="background:#C00000;color:white;font-size:14px;"><?php echo $list['documentos_subidos']."/".$list['documentos_obligatorios']; ?></span>
                     <?php } ?>
                 </td>         
-                <td>
-                    <a title="Trasladar" data-toggle="modal" data-target="#acceso_modal" 
-                    app_crear_per="<?= site_url('AppIFV/Modal_Trasladar_Grupo_C') ?>/<?php echo $list['id']; ?>">
-                        <img src="<?= base_url() ?>template/img/trasladar.png">
-                    </a>
-
-                    <a title="Eliminar" onclick="Delete_Asociar_Grupo('<?php echo $list['id']; ?>')">
-                        <img src="<?= base_url() ?>template/img/eliminar.png">
-                    </a>
-                </td>
             </tr>
         <?php } ?>
     </tbody>
@@ -74,7 +63,7 @@
             "aoColumnDefs" : [ 
                 {
                     'bSortable' : false,
-                    'aTargets' : [ 8 ]
+                    'aTargets' : [ 7 ]
                 }
             ]
         } );

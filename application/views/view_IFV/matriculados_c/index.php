@@ -48,35 +48,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="x_panel">
                 <div class="page-title" style="background-color: #C1C1C1;">
                     <h4 style="font-size:40px; color:white; position: absolute;top: 40%;left: 5%;margin: -25px 0 0 -25px;"><span id="titulo" class="text-semibold"><b>Lista de Alumnos</b></span></h4>
-                    <!--<h3 style="font-size: 15px; color:white;position: absolute;top: 40%;left: 10%;margin: -20px calc(50% - 400px) 0 calc(50% - 400px);"><span style="font-weight: bold;">ALUMNOS GRUPOS:</span> Matriculados(<?php //echo $list_grupo[0]['total_matriculados']; ?>); Promovidos(<?php //echo  $list_grupo[0]['total_promovidos']; ?>) <span style="font-weight: bold;"> Total: <?php //echo  array_sum($list_grupo[0]); ?></span></h3>  
-                    <h3 style="font-size: 15px; color:white;position: absolute;top: 40%;left: 10%;margin: 5px calc(50% - 400px) 0 calc(50% - 400px);"><span style="font-weight: bold;">ALUMNOS LISTA:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>     Matriculados(<?php //echo $list_matriculados[0]['total_a_matriculados']; ?>); Promovidos(<?php //echo  $list_matriculados[0]['total_a_promovidos']; ?>)  <span style="font-weight: bold;">  Total: <?php //echo  array_sum($list_matriculados[0]); ?></span></h3>-->
                 </div>
-                
-                <!--<div class="x_x_panel">
-                    <div class="lab" style="background-color: #89ce47;">
-                        <h3><?php //echo $cantidadnulos1[0]['total_aldia'];  ?></h3>
-                        <h4>Al Día</h4>
-                    </div>
-                    <div class="lab" style="background-color: #a1a1a1;">
-                        <h3><?php //echo $cantidadnulos1[0]['total_p1'];  ?></h3>
-                        <h4>Pdt 1</h4>
-                    </div>               
-                    <div class="lab" style="background-color: #fbcdad;">
-                        <h3><?php //echo $cantidadnulos1[0]['total_p2'];  ?></h3>
-                        <h4>Pdt 2</h4>
-                    </div>
-                    <div class="lab" style="background-color: #e07e80;">
-                        <h3><?php //echo $cantidadnulos1[0]['total_p3'];  ?></h3>
-                        <h4>Pdt 3+</h4>
-                    </div>
-                </div>-->
-                    
+
                     
                 <div class="heading-elements">
                     <div class="heading-btn-group">
-                        <a href="#"><!-- onclick="Actualizar_Lista_Matriculados_C();"-->
-                            <img src="<?= base_url() ?>template/img/actualizar_lista.png">
-                        </a>
 
                         <a onclick="Excel_Matriculados_C();" style="margin-left: 5px;">
                             <img src="<?= base_url() ?>template/img/excel.png" alt="Exportar Excel" />
@@ -208,5 +184,4 @@ defined('BASEPATH') or exit('No direct script access allowed');
     }
 </script>
 
-<?php $this->load->view('ceba/validaciones'); ?>
 <?php $this->load->view('view_IFV/footer'); ?>

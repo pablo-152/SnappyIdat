@@ -98,5 +98,4 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	}
 </script>
 
-<?php $this->load->view('ceba/validaciones'); ?>
-<?php $this->load->view('Admin/footer'); ?>
+<?php $this->load->view('view_IFV/footer'); ?>

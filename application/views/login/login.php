@@ -33,9 +33,6 @@
     <script type="text/javascript">
 
       $(document).ready(function() {
-
-       
-
         $('#frm_login').submit(function(event) {
 
             event.preventDefault();
@@ -44,35 +41,9 @@
 
             var Password = document.getElementById("Password").value;
 
-            
-
-            //var tipoacc = document.getElementById("tipoacc").value;
-
-
-
             var url = "<?php echo site_url(); ?>" + "/login/ingresar"; 
 
-            var urladministrador = "<?php echo site_url(); ?>" + "/Snappy/Alerta";
-
-            var urlteamleader= "<?php echo site_url(); ?>" + "/Snappy/Alerta";
-
-            var urldiseniador= "<?php echo site_url(); ?>" + "/Snappy/Alerta";
-
-            var urlredes= "<?php echo site_url(); ?>" + "/Snappy/Alerta";
-
-            var urlsolicitador= "<?php echo site_url(); ?>" + "/Snappy/Alerta";
-
-            var urlsadministrador= "<?php echo site_url(); ?>" + "/Snappy/Alerta";
-
-            var urladministradorseo= "<?php echo site_url(); ?>" + "/Ceba";
-
-            var urlsupervisoracademico= "<?php echo site_url(); ?>" + "/Ceba";
-
-            var urlsoporteti= "<?php echo site_url(); ?>" + "/General/Ticket";
-
-            var urlcontadorportugal = "<?php echo site_url(); ?>" + "/Ca";
-
-            var urlsecretariacomercial = "<?php echo site_url(); ?>" + "/Snappy/Alerta";
+            var urladministrador = "<?php echo site_url(); ?>" + "/AppIFV";
 
             $.ajax({
 
@@ -90,137 +61,25 @@
 
               success: function(resp){
 
-                //console.log(resp);
-
-                //$('#resultado').html(resp);
 
                 if(resp==="error"){
-                  //$('#resultado').html("Verifique datos de usuario y/o contraseña");
+
                   document.getElementById("resultado").style.display = 'block';
                 }
 
                 else{ 
-
-                  if(resp == "1"){
-
-                 
-                  location.href = urladministrador;
-
-                  }
-
-                  if(resp == "2")
-
-                  {
-
-                    
-                    location.href = urlteamleader;
-
-                  }
-
-                  if(resp == "3")
-
-                  {
-
-                   
-                    location.href = urldiseniador;
-
-                  }
-
-                  if(resp == "4")
-
-                  {
-
-                    
-                    location.href = urlredes;
-
-                  }
-
-                  if(resp == "5")
-
-                  {
-
-                    
-                    location.href = urlsolicitador;
-
-                  }
-
-                  if(resp == "6")
-
-                  {
-
-
-                    location.href = urlsadministrador;
-
-                  }
-
-                  if(resp == "7")
-
-                  {
-
                   
-
-                    location.href = urladministradorseo;
-
-                  }
-
-                  if(resp == "8")
-
-                  {
-
-                   
-                    location.href = urlsupervisoracademico;
-
-                  }
-
-                  if(resp == "9")
-
-                  {
-
+                    location.href = urladministrador;
                   
-
-                    location.href = urlsoporteti;
-
-                  }
-
-                  if(resp == "10" || resp == "11" || resp == "12")
-
-                  {
-
-                  
-
-                    location.href = urlsolicitador;
-
-                  }
-
-                  if(resp == "13")
-
-                  {
-
-                  
-
-                    location.href = urlcontadorportugal;
-
-                  }
-
-                  if(resp == "15")
-
-                  {
-
-
-
-                    location.href = urlsecretariacomercial;
-
-                  }
 
                 }
-
               }
+
+              })
 
             });
 
           });
-
-      });
 
     </script>
 

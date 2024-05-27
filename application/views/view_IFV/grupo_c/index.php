@@ -12,17 +12,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="x_panel">
                 <div class="page-title" style="background-color: #C1C1C1;"> 
                     <h4 style="font-size:40px; color:white; position: absolute;top: 40%;left: 5%;margin: -25px 0 0 -25px;"><span class="text-semibold"><b>Grupos (Lista)</b></span></h4>
-                    <h3 style="font-size: 15px; color:white;position: absolute;top: 40%;left: 10%;margin: -20px calc(50% - 400px) 0 calc(50% - 400px);"><span style="font-weight: bold;">ALUMNOS GRUPOS:</span> Matriculados(<?php echo $list_grupo[0]['total_matriculados']; ?>); Promovidos(<?php echo  $list_grupo[0]['total_promovidos']; ?>) <span style="font-weight: bold;"> Total: <?php echo  array_sum($list_grupo[0]); ?></span></h3>  
-                    <h3 style="font-size: 15px; color:white;position: absolute;top: 40%;left: 10%;margin: 5px calc(50% - 400px) 0 calc(50% - 400px);"><span style="font-weight: bold;">ALUMNOS LISTA:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>     Matriculados(<?php echo $list_matriculados[0]['total_a_matriculados']; ?>); Promovidos(<?php echo  $list_matriculados[0]['total_a_promovidos']; ?>)  <span style="font-weight: bold;">  Total: <?php echo  array_sum($list_matriculados[0]); ?></span></h3>     
                 </div>
 
                 <div class="heading-elements">
                     <div class="heading-btn-group">
-                        <?php if($_SESSION['usuario'][0]['id_usuario']==1 || $_SESSION['usuario'][0]['id_nivel']==6 || $_SESSION['usuario'][0]['id_usuario']==7 || $_SESSION['usuario'][0]['id_usuario']==85){  ?>
-                            <a type="button" href="<?= site_url('AppIFV/Registrar_Grupo_C') ?>"> 
-                                <img src="<?= base_url() ?>template/img/nuevo.png" alt="Nuevo"> 
-                            </a>
-                        <?php } ?>
 
                         <a onclick="Excel_Grupo_C();" style="margin-left: 5px;"> 
                             <img src="<?= base_url() ?>template/img/excel.png" alt="Exportar Excel">
@@ -60,22 +53,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		document.getElementById("rgrupos").style.display = "block";
 
         Lista_Grupo_C(1);
-
-        var g_matriculados = $('#g_matriculados').val();
-        var g_promovidos = $('#g_promovidos').val();
-        var l_matriculados = $('#l_matriculados').val();
-        var l_promovidos = $('#l_promovidos').val();
-
-        if(g_matriculados!=l_matriculados || g_promovidos!=l_promovidos){
-            Swal({
-                title: 'Alerta Roja',
-                text: "¡No coinciden los datos de la parte superior!",
-                type: 'error',
-                showCancelButton: false,
-                confirmButtonColor: '#3085d6',
-                confirmButtonText: 'OK',
-            });
-        }
     });
 
     function Lista_Grupo_C(tipo){
@@ -153,5 +130,4 @@ defined('BASEPATH') or exit('No direct script access allowed');
     }
 </script>
 
-<?php $this->load->view('ceba/validaciones'); ?>
 <?php $this->load->view('view_IFV/footer'); ?>

@@ -245,6 +245,4 @@ $id_nivel = $_SESSION['usuario'][0]['id_nivel'];
         window.location.replace("<?php echo site_url(); ?>AppIFV/Descargar_Fut_Recibido/" + image_id);
     });
 </script>
-
-<?php $this->load->view('ceba/validaciones'); ?>
-<?php $this->load->view('Admin/footer'); ?>
+<?php $this->load->view('view_IFV/footer'); ?>

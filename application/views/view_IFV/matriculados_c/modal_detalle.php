@@ -62,7 +62,7 @@
                 <input type="email" class="form-control" pattern="[a-zA-Z0-9._%+-]+" oninput="this.value = this.value.replace(/[^a-zA-Z0-9._%+-]+/, '');"
                 placeholder="correo institucional..." id="correo_inst_u" name="correo_inst_u" style="text-align:right; padding-right:37%"
                 value="<?php if($update_correo_inst==1){ echo $correo_inst[0]['correo']; } ?>">
-                <span class="correo-simbolo" style="position: absolute; right: 20px; top: 7px;">@ifv.edu.pe</span>
+                <span class="correo-simbolo" style="position: absolute; right: 20px; top: 7px;">@igb.edu.pe</span>
             </div>
         </div>
     </div>
